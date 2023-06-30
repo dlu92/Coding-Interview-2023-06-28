@@ -11,7 +11,8 @@
     </testsuites>
     <php>
         <env name="APP_ENV" value="testing"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="CACHE_DRIVER" value="redis"/>
+        <env name="QUEUE_CONNECTION" value="redis"/>
+        <env name="FILESYSTEM_DRIVER" value="local"/>
     </php>
 </phpunit>
