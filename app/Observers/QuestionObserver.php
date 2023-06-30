@@ -13,7 +13,7 @@ class QuestionObserver
     
     public function __construct()
     {
-        $this->session = app('session');;
+        $this->session = app('session');
     }
 
     /**
