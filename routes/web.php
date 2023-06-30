@@ -28,7 +28,6 @@ $router->group(['prefix'=>'api','json.response'], function() use ($router) {
         include __DIR__.'/api/v1.php';
     });
 
-
     /**
      * Api version 2
      */
@@ -36,5 +35,5 @@ $router->group(['prefix'=>'api','json.response'], function() use ($router) {
         include __DIR__.'/api/v2.php';
     });
 
-    $router->post('/corregirTest','PreguntasController@corregirTest'); 
+    $router->post('/corregirTest','v1\TestController@correct');
 });

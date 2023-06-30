@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\v2;
 
 use App\DTO\Filters\TestFilterDto;
-use App\Http\Services\TestService;
+use App\Services\TestService;
 use Carbon\Carbon;
 use Laravel\Lumen\Routing\Controller;
 use Illuminate\Http\Request;

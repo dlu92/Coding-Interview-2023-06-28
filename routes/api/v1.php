@@ -11,6 +11,14 @@ $router->group([
     'namespace' => '\App\Http\Controllers\v1'
 ], function() use ($router) {
 
-    $router->get('/tests','TestController@index');
-    
+    $router->get('tests','TestController@index');
+
+    $router->group([
+        'prefix' => 'tests'
+    ], function() use ($router) {
+
+        $router->post('/correct','TestController@correct'); 
+
+    });
+
 });

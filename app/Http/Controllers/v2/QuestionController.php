@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\v2;
 
 use App\DTO\Models\QuestionModelDto;
-use App\Http\Services\QuestionService;
+use App\Services\QuestionService;
 use App\Models\QuestionStatus;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
