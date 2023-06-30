@@ -81,6 +81,18 @@ The client complains that it takes too long to grade the tests and requests opti
 
 #
 
+## Project memory
+
+For the completion of this test, the SQL file containing the basic structure to perform the exercises has been integrated into a migration. Similarly, the JSON template file has been integrated into the test, responsible for the correction endpoint of exercise 3.
+
+You will also find in this test an InnoTest.postman_collection.json file for importing into Postman, with all the necessary configurations and endpoints to test all the exercises.
+
+This test includes unit tests to validate the exercises, a service abstraction layer, and DTOs for cleaner and scalable development.
+
+Lastly, this project has been developed in a Docker environment that provides all the necessary tools for project execution and proper support. The environment includes a PHP container, MariaDB, Redis, and PhpMyAdmin. You can find the environment in my GitHub repository.
+
+https://github.com/dlu92/laravel-dev-docker-environment
+
 ## Preparation
 
 To set up the local environment, follow these steps:
@@ -92,4 +104,7 @@ To set up the local environment, follow these steps:
     > php artisan migrate
 
 5. Run tests:
+    - First option:
     > phpunit
+    - Second option:
+    > ./vendor/bin/phpunit
