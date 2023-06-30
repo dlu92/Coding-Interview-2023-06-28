@@ -91,7 +91,7 @@ This test includes unit tests to validate the exercises, a service abstraction l
 
 Lastly, this project has been developed in a Docker environment that provides all the necessary tools for project execution and proper support. The environment includes a PHP container, MariaDB, Redis, and PhpMyAdmin. You can find the environment in my GitHub repository.
 
-https://github.com/dlu92/laravel-dev-docker-environment
+https://github.com/dlu92/laravel-dev-docker-enviroment
 
 ## Preparation
 
